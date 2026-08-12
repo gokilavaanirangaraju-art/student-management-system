@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Header & Navigation
+    ========================== -->
+
+    <header class="dashboard-header">
+
+        <div class="logo">
+            🎓 Student Portal
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="dashboard.html" class="active" id="dashboardLink">
+                📊 Dashboard
+            </a>
+
+            <a href="#courses">
+                📚 Courses
+            </a>
+
+            <a href="#profile">
+                👤 Profile
+            </a>
+
+            <a href="#" id="logoutLink" class="logout">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         Welcome Section
+    ========================== -->
+
+    <section class="welcome">
+
+        <div>
+
+            <h1>Welcome to Your Dashboard 👋</h1>
+
+            <p>
+                Continue your learning journey and explore
+                new courses.
+            </p>
+
+        </div>
+
+        <div class="student-icon">
+            🎓
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Dashboard Cards
+    ========================== -->
+
+    <main class="dashboard">
+
+
+        <!-- Available Courses -->
+
+        <div class="card course-card" id="courses">
+
+            <div class="card-icon">
+                📚
+            </div>
+
+            <h2>Available Courses</h2>
+
+            <p class="card-description">
+                Explore courses and improve your skills.
+            </p>
+
+            <ul class="course-list">
+
+                <li>
+                    <span>🌐 HTML &amp; CSS</span>
+                    <button>Enroll</button>
+                </li>
+
+                <li>
+                    <span>💻 JavaScript</span>
+                    <button>Enroll</button>
+                </li>
+
+                <li>
+                    <span>🐍 Python</span>
+                    <button>Enroll</button>
+                </li>
+
+                <li>
+                    <span>☕ Java Programming</span>
+                    <button>Enroll</button>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- My Courses -->
+
+        <div class="card my-course-card">
+
+            <div class="card-icon">
+                ⭐
+            </div>
+
+            <h2>My Courses</h2>
+
+            <p class="card-description">
+                Courses you are currently learning.
+            </p>
+
+            <ul class="my-courses">
+
+                <li>
+                    <div>
+                        <strong>🌐 HTML &amp; CSS</strong>
+                        <small>80% completed</small>
+                    </div>
+
+                    <span class="status completed">
+                        80%
+                    </span>
+                </li>
+
+                <li>
+                    <div>
+                        <strong>💻 JavaScript</strong>
+                        <small>60% completed</small>
+                    </div>
+
+                    <span class="status progress-status">
+                        60%
+                    </span>
+                </li>
+
+            </ul>
+
+            <button class="view-button">
+                View My Courses
+            </button>
+
+        </div>
+
+
+        <!-- Learning Progress -->
+
+        <div class="card progress-card">
+
+            <div class="card-icon">
+                📈
+            </div>
+
+            <h2>Learning Progress</h2>
+
+            <p class="card-description">
+                Track your learning progress.
+            </p>
+
+
+            <div class="progress-item">
+
+                <div class="progress-title">
+
+                    <span>HTML &amp; CSS</span>
+
+                    <strong>80%</strong>
+
+                </div>
+
+                <progress value="80" max="100"></progress>
+
+            </div>
+
+
+            <div class="progress-item">
+
+                <div class="progress-title">
+
+                    <span>JavaScript</span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <progress value="60" max="100"></progress>
+
+            </div>
+
+
+            <div class="progress-item">
+
+                <div class="progress-title">
+
+                    <span>Python</span>
+
+                    <strong>30%</strong>
+
+                </div>
+
+                <progress value="30" max="100"></progress>
+
+            </div>
+
+        </div>
+
+
+        <!-- Profile -->
+
+        <div class="card profile-card" id="profile">
+
+            <div class="card-icon">
+                👤
+            </div>
+
+            <h2>My Profile</h2>
+
+            <p class="card-description">
+                Manage your student information.
+            </p>
+
+            <div class="profile-info">
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="profileName">Student</span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="profileEmail">student@example.com</span>
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    <span class="online">
+                        ● Active
+                    </span>
+                </p>
+
+            </div>
+
+            <button class="profile-button">
+                Edit Profile
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Student Course Registration System
+        </p>
+
+        <p>
+            Learn • Grow • Succeed 🎓
+        </p>
+
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
